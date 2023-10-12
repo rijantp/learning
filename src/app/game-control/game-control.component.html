@@ -1,0 +1,15 @@
+<div style="display: flex;flex-direction: column">
+<form [formGroup]="demoForm"  style="display: flex; grid-gap: 15px;">
+  <mat-form-field appearance="fill">
+    <mat-label>Fill form field</mat-label>
+    <input formControlName="input" matInput placeholder="Placeholder">
+    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+    <mat-hint>Hint</mat-hint>
+  </mat-form-field>
+  <mat-card>
+    <mat-card-content>{{demoForm.controls['input'].value}}</mat-card-content>
+  </mat-card>
+  <button mat-button>add new</button>
+</form>
+<mat-divider></mat-divider>
+</div>
